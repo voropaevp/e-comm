@@ -1,14 +1,10 @@
-
-
-        
-
         <div id="newsletter" class="section" style="background: #671539;">
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<div class="newsletter">
 							<p style="color: #ffffff;">Sign Up for the <strong>OFFERUPDATES</strong></p>
 							<form id="offer_form" onsubmit="return false">

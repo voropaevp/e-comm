@@ -137,21 +137,6 @@ VALUES (3, 'aaa@aaa.aa'),
 -- --------------------------------------------------------
 
 --
--- Table structure for table `logs`
---
-
-CREATE TABLE `logs`
-(
-    `id`      int(11)     NOT NULL,
-    `user_id` varchar(50) NOT NULL,
-    `action`  varchar(50) NOT NULL,
-    `date`    datetime    NOT NULL
-) ENGINE = InnoDB
-  DEFAULT CHARSET = latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `orders`
 --
 
@@ -307,24 +292,6 @@ VALUES (1, 'aa ', 'aa', 'aa@aa.aa', 'aa', '1111111', 'aa', 'aa'),
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `user_info_backup`
---
-
-CREATE TABLE `user_info_backup`
-(
-    `user_id`    int(10)      NOT NULL,
-    `first_name` varchar(100) NOT NULL,
-    `last_name`  varchar(100) NOT NULL,
-    `email`      varchar(300) NOT NULL,
-    `password`   varchar(300) NOT NULL,
-    `mobile`     varchar(10)  NOT NULL,
-    `address1`   varchar(300) NOT NULL,
-    `address2`   varchar(11)  NOT NULL
-) ENGINE = InnoDB
-  DEFAULT CHARSET = latin1;
-
-
 
 --
 -- Indexes for dumped tables
@@ -360,11 +327,6 @@ ALTER TABLE `categories`
 ALTER TABLE `email_info`
     ADD PRIMARY KEY (`email_id`);
 
---
--- Indexes for table `logs`
---
-ALTER TABLE `logs`
-    ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `orders`
@@ -406,12 +368,6 @@ ALTER TABLE `user_info`
     ADD PRIMARY KEY (`user_id`);
 
 --
--- Indexes for table `user_info_backup`
---
-ALTER TABLE `user_info_backup`
-    ADD PRIMARY KEY (`user_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -449,12 +405,6 @@ ALTER TABLE `categories`
 ALTER TABLE `email_info`
     MODIFY `email_id` int(100) NOT NULL AUTO_INCREMENT,
     AUTO_INCREMENT = 7;
-
---
--- AUTO_INCREMENT for table `logs`
---
-ALTER TABLE `logs`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -498,12 +448,6 @@ ALTER TABLE `user_info`
     MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT,
     AUTO_INCREMENT = 27;
 
---
--- AUTO_INCREMENT for table `user_info_backup`
---
-ALTER TABLE `user_info_backup`
-    MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 27;
 
 --
 -- Constraints for dumped tables
